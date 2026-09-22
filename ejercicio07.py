@@ -4,16 +4,15 @@ Determina cuánto pagará finalmente una persona por un artículo equis, conside
 
 Crea un menú para que el usuario elija entre 2 productos y el que elija, despliega el nombre de producto, precio, precio con descuento y precio final.
 """
-# el menu con 2 productos
-print("1. Camisa - $500")
-print("2. Pantalon - $800")
-op=int(input("elige producto (1 o 2): "))
-# segun la opcion guardamos el nombre y el precio
+print("1. camisa - 500")
+print("2. pantalon - 800")
+op=int(input("elige (1 o 2): "))
+# segun opcion se guarda el nombre y el precio
 if op==1:
-    nombre="Camisa"
+    nombre="camisa"
     precio=500
 else:
-    nombre="Pantalon"
+    nombre="pantalon"
     precio=800
 # calculamos el 20% de descuento
 desc=precio*0.2

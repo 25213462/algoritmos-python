@@ -2,10 +2,16 @@
 p11
 Se requiere determinar cuál de tres cantidades proporcionadas es la mayor.
 """
-# esto encuentra cual de las tres cantidades es la mayor
+a=int(input("cantidad 1: "))
+b=int(input("cantidad 2: "))
+c=int(input("cantidad 3: "))
+# esto determina el mayor de tres numeros
 def m(a,b,c):
-    # se usa max para sacar el numero mayor de los tres
-    return max(a,b,c)
-# ejemplo
-print(m(10,25,15))
+    if a>=b and a>=c:
+        return a
+    elif b>=a and b>=c:
+        return b
+    else:
+        return c
+print(m(a,b,c))
 

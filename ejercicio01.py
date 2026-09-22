@@ -4,13 +4,11 @@ Una empresa importadora desea determinar cuántos
 dólares puede adquirir con equis cantidad de dinero
 mexicano.
 """
-# esto calcula cuantos dolares se pueden comprar con pesos mexicanos, mxn es dinero en pesos, tc es tipo de cambio
-def c(mxn,tc):
-    # calculamos los dolares dividiendo los pesos entre el valor
-    dolares=mxn/tc
+mxn=int(input("pesos mexicanos: "))
+# esto calcula cuantos dolares se pueden comprar con pesos mexicanos, mxn es dinero en pesos
+def c(mxn):
+    # calculamos los dolares dividiendo los pesos entre el tipo de cambio fijo (20)
+    dolares=mxn/20
     # regresa en dolares
     return dolares
-# 3 ejemplos
-print(c(1000,20))
-print(c(500,18.5))
-print(c(2500,19.8))
+print(c(mxn))
