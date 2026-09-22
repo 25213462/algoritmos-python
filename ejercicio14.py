@@ -12,8 +12,8 @@ realice un algoritmo para determinar cuanto debe pagar por cada concepto
 una persona que realiza una llamada en moneda nacional mexicana (mxn).
 """
 m = int(input("minutos: "))
-d = input("dia: ").lower()
-t = input("turno (matutino/vespertino): ").lower()
+d = input("dia: ")
+t = input("turno (matutino/vespertino): ")
 # m es minutos de la llamada, d es dia de la semana, t es turno (matutino/vespertino)
 def c14(m, d, t):
     # calculamos el costo segun los minutos
